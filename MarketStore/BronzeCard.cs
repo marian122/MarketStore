@@ -20,13 +20,13 @@ namespace MarketStore
             output.AppendLine($"Bronze");
             output.AppendLine();
 
-            output.AppendLine($"Purchase value: ${this.purchaseValue}");
+            output.AppendLine($"Purchase value: ${this.purchaseValue:f2}");
 
             if (turnover < 100)
             {
                 output.AppendLine($"Discount rate: 0.0%");
                 output.AppendLine($"Discount: $0.0");
-                output.AppendLine($"Total: ${this.purchaseValue}");
+                output.AppendLine($"Total: ${this.purchaseValue:f2}");
             }
             else if (turnover >= 100 && turnover < 300)
             {

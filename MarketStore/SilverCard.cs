@@ -20,7 +20,7 @@ namespace MarketStore
             output.AppendLine($"Silver");
             output.AppendLine();
 
-            output.AppendLine($"Purchase value: ${this.purchaseValue}");
+            output.AppendLine($"Purchase value: ${this.purchaseValue:f2}");
 
             if (turnover < 300)
             {
